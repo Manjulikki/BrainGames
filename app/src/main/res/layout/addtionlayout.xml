@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hint"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:background="@drawable/mindupbutton"
+        android:id="@+id/op1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/op1"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/mindupbutton"
+        android:id="@+id/op2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/op2"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/mindupbutton"
+        android:id="@+id/op3"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/op3"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/mindupbutton"
+        android:id="@+id/op4"/>
+</RelativeLayout>

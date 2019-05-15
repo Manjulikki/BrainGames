@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    android:layout_margin="1dp"
+    android:background="@color/white">
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/mindupbutton"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="High Scores"-->
+        <!--android:id="@+id/HSbutton" />-->
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:text="X"
+        android:id="@+id/closeButtonHS"
+        android:textColor="@color/black"
+        android:background="@drawable/round_button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Games"
+        android:id="@+id/column1"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="High Scores"
+        android:textColor="@color/black"
+        android:id="@+id/column2"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Images and numbers"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imagesAndNumbers"
+        android:layout_below="@id/column1"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/INScore"
+        android:textColor="@color/black"
+        android:layout_above="@+id/images"
+        android:layout_alignEnd="@+id/column2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Images"
+        android:textColor="@color/black"
+        android:id="@+id/images"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/imagesAndNumbers" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:textColor="@color/black"
+        android:id="@+id/IScore"
+        android:layout_alignBottom="@+id/images"
+        android:layout_alignEnd="@+id/column2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Numbers"
+        android:id="@+id/numbers"
+        android:textColor="@color/black"
+        android:layout_below="@+id/images"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:textColor="@color/black"
+        android:id="@+id/NScore"
+        android:layout_alignBottom="@+id/numbers"
+        android:layout_alignEnd="@+id/column2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="General Knowledge"
+        android:textColor="@color/black"
+        android:id="@+id/gk"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/numbers"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/GKScore"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/gk"
+        android:layout_alignEnd="@+id/column2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Memory Check"
+        android:id="@+id/memoryCheck"
+        android:layout_below="@+id/gk"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:textColor="@color/black"
+        android:id="@+id/MCScore"
+        android:layout_alignEnd="@+id/column2"
+        android:layout_below="@id/GKScore"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Previous Check"
+        android:textColor="@color/black"
+        android:id="@+id/previousCheck"
+        android:layout_below="@+id/memoryCheck"
+        android:layout_alignStart="@+id/memoryCheck"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/PCScore"
+        android:layout_below="@+id/MCScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gretter Lesser"
+        android:id="@+id/gretterLesser"
+        android:layout_below="@+id/previousCheck"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/GLScore"
+        android:layout_below="@+id/PCScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Matching Pairs"
+        android:textColor="@color/black"
+        android:id="@+id/matchingPairs"
+        android:layout_below="@+id/gretterLesser"
+        android:layout_alignStart="@+id/memoryCheck"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/matchingScore"
+        android:layout_below="@+id/GLScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Color And text"
+        android:id="@+id/colorGame"
+        android:layout_below="@+id/matchingPairs"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/colorScore"
+        android:layout_below="@+id/matchingScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Addition"
+        android:id="@+id/addition"
+        android:layout_below="@+id/colorGame"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/additionScore"
+        android:layout_below="@+id/colorScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Touch Number"
+        android:textColor="@color/black"
+        android:id="@+id/touchNumber"
+        android:layout_below="@+id/addition"
+        android:layout_alignStart="@+id/memoryCheck"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/touchScore"
+        android:layout_below="@+id/additionScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Touch Number+"
+        android:id="@+id/touchPlus"
+        android:layout_below="@+id/touchNumber"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:id="@+id/touchPlusScore"
+        android:layout_below="@+id/touchScore"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Never Played"
+        android:layout_below="@+id/gretterLesser"
+        android:layout_alignEnd="@+id/column2"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
+
+

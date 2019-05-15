@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:id="@+id/challenge"
+        android:text="Challenge"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+  <Button
+      android:layout_width="155dp"
+      android:layout_height="50dp"
+      android:layout_below="@+id/challenge"
+      android:textColor="@color/black"
+      android:layout_marginTop="1dp"
+      android:background="@color/white"
+      android:id="@+id/challengeFriend"
+      android:text="Challenge Friend"/>
+</RelativeLayout>

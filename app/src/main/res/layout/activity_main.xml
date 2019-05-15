@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/background"
+
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="manjunn.brain_games.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/hiddenButton"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/challengeButton"
+        android:background="@drawable/mindupbutton"
+        android:text="Challenge"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/trainingButton"
+        android:textSize="24sp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cHiddenB"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/challengeButton" />
+
+    <Button
+        android:id="@+id/trainingButton"
+        android:background="@drawable/mindupbutton"
+        android:text="Training"
+        android:textColor="#000000"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/feedbackButton"
+        android:textSize="24sp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:id="@+id/feedbackButton"
+        android:background="@drawable/mindupbutton"
+        android:text="Feedback"
+        android:textColor="#000000"
+        android:layout_above="@+id/aboutUs"
+        android:textSize="24sp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Feedback"-->
+        <!--android:width="160dp"-->
+        <!--android:height="50dp"-->
+        <!--android:layout_below="@id/playButton"-->
+        <!--android:background="@color/darkGreen"-->
+        <!--android:id="@+id/feedbackButton"/>-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Games List"-->
+        <!--android:layout_marginTop="300dp"-->
+        <!--android:width="160dp"-->
+        <!--android:height="50dp"-->
+        <!--android:visibility="invisible"-->
+        <!--android:background="@color/orange"-->
+        <!--android:id="@+id/gameListButton"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/gameListButton"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:text="Games List"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="24sp"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:shadowColor="#A8A8A8"-->
+        <!--android:shadowDx="0"-->
+        <!--android:shadowDy="0"-->
+        <!--android:shadowRadius="5"-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_above="@+id/playButton"-->
+        <!--android:layout_marginBottom="5dp"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/settingsButton"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:text="Settings"-->
+        <!--android:textColor="#000000"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_below="@+id/feedbackButton"-->
+        <!--android:textSize="24sp"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:shadowColor="#A8A8A8"-->
+        <!--android:shadowDx="0"-->
+        <!--android:shadowDy="0"-->
+        <!--android:shadowRadius="5"-->
+        <!--android:visibility="gone"/>-->
+
+    <Button
+        android:id="@+id/aboutUs"
+        android:background="@drawable/mindupbutton"
+        android:text="About US"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp"
+        android:textSize="24sp"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="15dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Settings"-->
+        <!--android:width="160dp"-->
+        <!--android:height="50dp"-->
+        <!--android:layout_below="@id/feedbackButton"-->
+        <!--android:background="@color/red"-->
+        <!--android:id="@+id/settingsButton"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="New Text"-->
+        <!--android:id="@+id/score_main"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_below="@+id/score_text"-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_marginLeft="55dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Large Text"-->
+        <!--android:id="@+id/result"-->
+        <!--android:textColor="@color/red"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<ImageButton-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/settings"-->
+        <!--android:id="@+id/ss"/>-->
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingLeft="0dp"
+        android:background="@drawable/hs"
+        android:id="@+id/hss"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/help"
+        android:id="@+id/help" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/hss"
+        android:text="Mind Games"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mindupbutton"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:id="@+id/mindUP" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Your Score"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:id="@+id/score_text"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_below="@+id/result"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="High Score"-->
+        <!--android:id="@+id/highScoreText"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_below="@+id/mindUP"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:textColor="@color/white"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Medium Text"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:id="@+id/highScore"-->
+        <!--android:layout_below="@+id/highScoreText"-->
+        <!--android:layout_alignParentEnd="true" />-->
+</RelativeLayout>

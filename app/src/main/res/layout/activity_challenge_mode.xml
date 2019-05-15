@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="manjunn.brain_games.ChallengeMode"
+    android:background="@color/white">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:layout_above="@+id/challengeText"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/cardViewChallenger"
+        app:cardCornerRadius="50dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:id="@+id/challengerPP"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="challenger"
+        android:id="@+id/challengerName"
+        android:layout_alignTop="@+id/cardViewChallenger"
+        android:layout_toEndOf="@+id/cardViewChallenger"
+        android:layout_marginLeft="15dp"
+        android:gravity="left"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/challengerGenderAge"
+        android:text="aaab"
+        android:layout_below="@+id/challengerName"
+        android:layout_toEndOf="@+id/cardViewChallenger"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/challengerPlace"
+        android:text="bbbc"
+        android:layout_below="@+id/challengerGenderAge"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/cardViewChallenger"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Challenge"
+        android:layout_centerInParent="true"
+        android:id="@+id/challengeText"
+        android:textColor="@color/red"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingPartner"
+        android:layout_below="@+id/challengeText"
+        android:text="Searching for your Partner...."
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/cRelativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/darkGreen"
+        android:layout_below="@+id/challengeText">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/cardViewChallenge"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="50dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:id="@+id/challengePP"
+
+            android:layout_centerHorizontal="true">
+        </ImageView>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="challenge"
+        android:gravity="left"
+        android:id="@+id/challengeName"
+        android:layout_alignTop="@+id/cardViewChallenge"
+        android:layout_toEndOf="@+id/cardViewChallenge"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/challengeGenderAge"
+        android:text="aaaba"
+        android:layout_toEndOf="@+id/cardViewChallenge"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/challengeName"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/challengePlace"
+        android:text="bbbcb"
+        android:layout_below="@+id/challengeGenderAge"
+        android:layout_toEndOf="@+id/cardViewChallenge"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>
+

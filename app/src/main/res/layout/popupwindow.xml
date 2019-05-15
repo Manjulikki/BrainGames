@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+            android:background="@drawable/index">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedBack"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:hint="Enter your Feedback"
+                android:layout_marginTop="93dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:id="@+id/sendFB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/otherbuttonshapes"
+                android:layout_below="@+id/feedBack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="59dp" />
+
+       <Button android:layout_alignParentRight="true"
+               android:text="X"
+           android:id="@+id/closeButton"
+        android:textColor="#FFF" android:background="@drawable/round_button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp" android:layout_height="25dp"
+        android:layout_width="25dp" android:textSize="12sp" android:textStyle="bold"/>
+
+            <!--<RatingBar-->
+                <!--android:rating="0"-->
+                <!--android:stepSize="0.5"-->
+                <!--android:numStars="5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ratingBar"-->
+                <!--android:layout_below="@+id/sendFB"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="40dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/editText"
+        android:text="Rate us"
+        android:visibility="invisible"
+        android:layout_below="@+id/sendFB"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/headingText"
+        android:text="Your feedback is necessary:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
+
+
